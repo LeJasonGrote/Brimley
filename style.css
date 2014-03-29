@@ -13,10 +13,12 @@ body{
 	position: absolute;
 	height: 16px;
 	width: 16px;
+	-webkit-transition: all .1s ease;
 }
 .bullet{
 	background: #FF4136;
 	position: absolute;
 	height: 16px;
 	width: 16px;
+	-webkit-transition: all .05s linear;
 }

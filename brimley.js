@@ -7,8 +7,8 @@ function brimley(){
 
 	var bf = $('#battlefield');
 
-	bf.height(u(16));
-	bf.width(u(24));
+	bf.height(u(24));
+	bf.width(u(36));
 
 	tank = function(){
 		xpos = 12,
@@ -30,16 +30,24 @@ function brimley(){
 
 		this.move = function(direction){
 			if(direction == 'up'){
-				ypos--
+				if(ypos > 0){
+					ypos--
+				}
 				t = 'up'
 			}else if(direction == 'down'){
-				ypos++
+				if(ypos < 23){
+					ypos++
+				}
 				t = 'down'
 			}else if(direction == 'left'){
-				xpos--
+				if(xpos > 0){
+					xpos--
+				}
 				t = 'left'
 			}else if(direction == 'right'){
-				xpos++
+				if(xpos < 35){
+					xpos++
+				}
 				t = 'right'
 			}
 			viz[0].style.top = u(ypos);
