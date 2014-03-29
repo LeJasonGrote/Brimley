@@ -57,8 +57,6 @@ function brimley(){
 
 	bullet = function(x, y, t){
 
-		console.log('fired')
-
 		var viz = $('<div>',{
 					class: "bullet",
 					css: {
