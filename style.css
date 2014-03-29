@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+}
+#battlefield{
+	display: block;
+	margin: 2em auto 0;
+	background: #7FDBFF;
+	position: relative;
+	overflow: hidden;
+}
+.tank{
+	background: #3D9970;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+}
+.bullet{
+	background: #FF4136;
+	position: absolute;
+	height: 16px;
+	width: 16px;
+}
